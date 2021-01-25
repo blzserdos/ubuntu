@@ -1,6 +1,6 @@
 **Ubuntu** image from https://hub.docker.com/_/ubuntu
 
-Hosted on [GitHub Container Registry](https://github.com/orgs/MaastrichtU-IDS/packages/container/package/ubuntu) ([ghcr.io](https://ghcr.io)) to avoid DockerHub pull limitations.
+Hosted on [GitHub Container Registry](https://github.com/orgs/MaastrichtU-IDS/packages/container/package/ubuntu) ([ghcr.io](https://ghcr.io)) to avoid DockerHub pull limitations, and easily deploy on clusters (such as Kubernetes).
 
 ## Automatically updated
 
