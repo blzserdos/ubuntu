@@ -83,21 +83,21 @@ RUN install.r --error \
     pbkrtest \
     DHARMa \
     furrr \
-#    VGAM \
-#    gridExtra \
+    VGAM \
+    gridExtra \
     pracma \
     DoE.base \
     AlgDesign \
 #    FactoMineR \
 #    rstatix \
 #    car \
-#    factoextra \
-#    readxl \
+    factoextra \
+    readxl \
     reshape2 \
     data.table \
     dtw \
     optparse 
-#    proxy \
-#    pdist
+    proxy \
+    pdist
     
 CMD ["bash"]
