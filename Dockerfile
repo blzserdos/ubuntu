@@ -74,6 +74,8 @@ RUN install2.r --error \
     devtools \
     ggpubr \
     vegan \
+    lme4 \
+    pbkrtest \
     DHARMa \
     furrr \
     VGAM \
@@ -81,6 +83,9 @@ RUN install2.r --error \
     pracma \
     DoE.base \
     AlgDesign \
+    FactoMineR \
+    rstatix \
+    car \
     factoextra \
     readxl \
     reshape2 \
