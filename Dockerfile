@@ -25,6 +25,8 @@ RUN apt-get update \
 		vim-tiny \
 		wget \
 		ca-certificates \
+		htop \
+		screen \
         && add-apt-repository --enable-source --yes "ppa:marutter/rrutter4.0" \
         && add-apt-repository --enable-source --yes "ppa:c2d4u.team/c2d4u4.0+"
 
@@ -58,5 +60,29 @@ RUN apt-get update \
  	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r \
  	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
  	&& rm -rf /var/lib/apt/lists/*
-
+	
+# Install R packages
+RUN install2.r --error \
+    tidyverse \
+    stats \
+    utils \
+    devtools \
+    ggpubr \
+    vegan \
+    DHARMa \
+    furrr \
+    VGAM \
+    gridExtra \
+    pracma \
+    DoE.base \
+    AlgDesign \
+    factoextra \
+    readxl \
+    reshape2 \
+    data.table \
+    dtw \
+    optparse \
+    proxy \
+    pdist
+    
 CMD ["bash"]
