@@ -68,7 +68,8 @@ RUN apt-get update \
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
-		r-cran-lme4
+		r-cran-lme4 \
+		r-cran-gmp
 		
 # Install R packages
 RUN install.r --error \
