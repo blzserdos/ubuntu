@@ -67,32 +67,32 @@ RUN apt-get update \
  	&& rm -rf /var/lib/apt/lists/*
 	
 # Install R packages
-RUN install2.r --error \
-    tidyverse \
-    stats \
-    utils \
-    devtools \
-    ggpubr \
-    vegan \
-    lme4 \
-    pbkrtest \
-    DHARMa \
-    furrr \
-    VGAM \
-    gridExtra \
-    pracma \
-    DoE.base \
-    AlgDesign \
-    FactoMineR \
-    rstatix \
-    car \
-    factoextra \
-    readxl \
-    reshape2 \
-    data.table \
-    dtw \
-    optparse \
-    proxy \
-    pdist
+#RUN install2.r --error \
+#    tidyverse \
+#    stats \
+#    utils \
+#    devtools \
+#    ggpubr \
+#    vegan \
+#    lme4 \
+#    pbkrtest \
+#    DHARMa \
+#    furrr \
+#    VGAM \
+#    gridExtra \
+#    pracma \
+#    DoE.base \
+#    AlgDesign \
+#    FactoMineR \
+#    rstatix \
+#    car \
+#    factoextra \
+#    readxl \
+#    reshape2 \
+#    data.table \
+#    dtw \
+#    optparse \
+#    proxy \
+#    pdist
     
 CMD ["bash"]
