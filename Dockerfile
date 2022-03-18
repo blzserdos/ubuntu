@@ -19,6 +19,11 @@ RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
 		software-properties-common \
                 dirmngr \
+		build-essential \
+		libcurl4-gnutls-dev \
+		libxml2-dev \
+		libssl-dev \
+		libgit2-dev \
                 ed \
 		less \
 		locales \
