@@ -5,4 +5,6 @@ LABEL org.opencontainers.image.source https://github.com/MaastrichtU-IDS/ubuntu
 RUN apt-get update -y && \
     apt-get upgrade -y
 
-RUN apt-get install curl wget git gfortran build-essential ca-certificates python3 python3-pip libblas-dev liblapack-dev -y
+RUN apt-get install curl wget git gfortran build-essential ca-certificates python3 python3-pip libblas-dev liblapack-dev htop r-base -y
+
+Rscript -e "install.packages(c("tidyverse","ggpubr","vegan","DHARMa","furrr","VGAM","gridExtra","pracma","DoE.base","AlgDesign","factoextra","readxl", "stringr", "reshape2","lme4","data.table","dtw","optparse","pdist","proxy"))"
