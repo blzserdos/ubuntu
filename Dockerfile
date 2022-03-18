@@ -65,33 +65,37 @@ RUN apt-get update \
  	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r \
  	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
  	&& rm -rf /var/lib/apt/lists/*
-	
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends \
+		r-cran-lme4
+		
 # Install R packages
-#RUN install2.r --error \
-#    tidyverse \
+RUN install.r --error \
+    tidyverse \
 #    stats \
 #    utils \
 #    devtools \
 #    ggpubr \
-#    vegan \
+    vegan \
 #    lme4 \
-#    pbkrtest \
-#    DHARMa \
-#    furrr \
+    pbkrtest \
+    DHARMa \
+    furrr \
 #    VGAM \
 #    gridExtra \
-#    pracma \
-#    DoE.base \
-#    AlgDesign \
+    pracma \
+    DoE.base \
+    AlgDesign \
 #    FactoMineR \
 #    rstatix \
 #    car \
 #    factoextra \
 #    readxl \
-#    reshape2 \
-#    data.table \
-#    dtw \
-#    optparse \
+    reshape2 \
+    data.table \
+    dtw \
+    optparse 
 #    proxy \
 #    pdist
     
