@@ -96,8 +96,8 @@ RUN install.r --error \
     reshape2 \
     data.table \
     dtw \
-    optparse 
-    #proxy \
+    optparse \
+    proxy \
     pdist
-    
+
 CMD ["bash"]
