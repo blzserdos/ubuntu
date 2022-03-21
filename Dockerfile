@@ -97,7 +97,7 @@ RUN install.r --error \
     data.table \
     dtw \
     optparse 
-    proxy \
+    #proxy \
     pdist
     
 CMD ["bash"]
