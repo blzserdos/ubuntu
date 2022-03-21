@@ -74,8 +74,8 @@ RUN apt-get update \
 # Install R packages
 RUN install.r --error \
     tidyverse \
-    stats \
-    utils \
+#    stats \
+#    utils \
 #    devtools \
 #    ggpubr \
     vegan \
